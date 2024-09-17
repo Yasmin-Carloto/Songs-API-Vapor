@@ -10,14 +10,14 @@ import Fluent
 import Vapor
 
 struct CreateSongs: Migration {
-    func prepare(on database: any FluentKit.Database) -> NIOCore.EventLoopFuture<Void> {
+    func prepare(on database: Database) -> NIOCore.EventLoopFuture<Void> {
         return database.schema("songs")
             .id()
             .field("title", .string, .required)
             .create()
     }
     
-    func revert(on database: any FluentKit.Database) -> NIOCore.EventLoopFuture<Void> {
+    func revert(on database: Database) -> NIOCore.EventLoopFuture<Void> {
         return database.schema("songs")
             .delete()
     }
