@@ -30,7 +30,7 @@ A finalidade desta aplicação está em ser uma ponte de aprendizado e desenvolv
    ```
    git clone https://github.com/Yasmin-Carloto/Songs-API-Vapor.git
    ```
-2. Com o XCode aberto, entre em **File>Packages>Resolve Packages Version;
+2. Com o XCode aberto, entre em **File>Packages>Resolve Packages Version**;
 3. Abra o Docker;
 3. Com o terminal aberto no diretório do projeto, digite:
     ```
